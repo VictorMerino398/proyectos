@@ -42,7 +42,6 @@ class comida extends StatelessWidget {
                   padding: const EdgeInsets.only(
                     left: 15,
                     right: 15,
-                    //bottom: 30,
                     top: 30,
                   ),
                   child: Column(
@@ -55,16 +54,13 @@ class comida extends StatelessWidget {
                             SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
                               child: Container(
-                                height:
-                                    120, //altura del obeto pantalla principal
-                                width:
-                                    120, //anchura del obeto pantalla principal
+                                height: 120,
+                                width: 120,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(10),
                                   image: DecorationImage(
                                     image: AssetImage(image),
-                                    fit: BoxFit
-                                        .contain, //pone en contenedor la imagen
+                                    fit: BoxFit.contain,
                                   ),
                                 ),
                               ),
@@ -81,14 +77,13 @@ class comida extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              //INICIO titulo
                               title,
                               style: const TextStyle(
                                   fontSize: 17.0,
                                   fontWeight: FontWeight.w900,
                                   letterSpacing: 1,
                                   color: Color.fromARGB(255, 31, 7, 141)),
-                            ), //FIN titulo
+                            ),
                             const SizedBox(
                               height: 0.01,
                             ),
@@ -96,19 +91,17 @@ class comida extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  //INICIO precio
                                   "\$" + price,
                                   style: const TextStyle(
                                       fontSize: 13.0,
                                       fontWeight: FontWeight.w900,
                                       letterSpacing: 1,
                                       color: Color.fromARGB(255, 13, 167, 20)),
-                                ), //FIN precio
+                                ),
                                 const SizedBox(
                                   height: 40.0,
                                 ),
                                 Container(
-                                  //INICIO añadir compra
                                   alignment: Alignment.center,
                                   height: 27,
                                   width: 27,
@@ -121,7 +114,7 @@ class comida extends StatelessWidget {
                                     color: Color.fromARGB(255, 122, 7, 133),
                                     size: 22,
                                   ),
-                                ) //FIN añadir compra
+                                )
                               ],
                             )
                           ],

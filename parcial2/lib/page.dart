@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage>
               height: 180,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('assets/pict/LogoTortas.png'),
+                      image: AssetImage('assets/imgs/LogoTortas.png'),
                       fit: BoxFit.cover),
                   borderRadius: BorderRadius.circular(10)),
             ),
@@ -94,11 +94,9 @@ class _HomePageState extends State<HomePage>
               height: size.height * 0.04,
             ),
             TabBar(
-              indicatorColor:
-                  Color.fromARGB(255, 29, 215, 240), //menu activo border
-              unselectedLabelColor:
-                  Color.fromARGB(251, 131, 9, 4), //menu inactivo
-              labelColor: Color.fromARGB(255, 29, 215, 240), //menu activo
+              indicatorColor: Color.fromARGB(255, 29, 215, 240),
+              unselectedLabelColor: Color.fromARGB(251, 131, 9, 4),
+              labelColor: Color.fromARGB(255, 29, 215, 240),
               isScrollable: true,
               labelStyle: const TextStyle(fontSize: 17.0),
               controller: _tabController,
@@ -131,7 +129,7 @@ class _HomePageState extends State<HomePage>
                   scrollDirection: Axis.horizontal,
                   children: [
                     comida(
-                      "assets/pict/t1.jpg",
+                      "assets/imgs/t1.jpg",
                       "Torta Mexicana",
                       "t1",
                       "3.50",
@@ -140,7 +138,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/t2.jpg",
+                      "assets/imgs/t2.jpg",
                       "Torta de Pollo",
                       "t2",
                       "2.50",
@@ -149,7 +147,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/t3.jpg",
+                      "assets/imgs/t3.jpg",
                       "Torta de Carne",
                       "t3",
                       "3.00",
@@ -160,7 +158,7 @@ class _HomePageState extends State<HomePage>
                   scrollDirection: Axis.horizontal,
                   children: [
                     comida(
-                      "assets/pict/p1.jpg",
+                      "assets/imgs/p1.jpg",
                       "Pizza de Hongos",
                       "p1",
                       "15.99",
@@ -169,7 +167,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/p2.jpg",
+                      "assets/imgs/p2.jpg",
                       "Pizza de Piña",
                       "p2",
                       "12.99",
@@ -177,18 +175,18 @@ class _HomePageState extends State<HomePage>
                     const SizedBox(
                       width: 15.0,
                     ),
-                    comida("assets/pict/p3.jpg", "Pizza de Pepperoni", "p2",
+                    comida("assets/imgs/p3.jpg", "Pizza de Pepperoni", "p2",
                         "14.99"),
                     const SizedBox(
                       width: 15.0,
                     ),
                     comida(
-                        "assets/pict/p4.jpg", "Pizza de Jamon", "p2", "11.99"),
+                        "assets/imgs/p4.jpg", "Pizza de Jamon", "p2", "11.99"),
                     const SizedBox(
                       width: 15.0,
                     ),
                     comida(
-                        "assets/pict/p5.jpg", "Pizza de Queso", "p2", "14.99"),
+                        "assets/imgs/p5.jpg", "Pizza de Queso", "p2", "14.99"),
                     const SizedBox(
                       width: 15.0,
                     ),
@@ -198,7 +196,7 @@ class _HomePageState extends State<HomePage>
                   scrollDirection: Axis.horizontal,
                   children: [
                     comida(
-                      "assets/pict/h1.jpg",
+                      "assets/imgs/h1.jpg",
                       "Hamburguesa de Pollo",
                       "h1",
                       "5.99",
@@ -207,7 +205,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/h2.jpg",
+                      "assets/imgs/h2.jpg",
                       "Hamburguesa doble Carne",
                       "h2",
                       "8.50",
@@ -216,7 +214,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/h3.jpg",
+                      "assets/imgs/h3.jpg",
                       "Hamburguesa de queso",
                       "h3",
                       "3.50",
@@ -225,7 +223,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/h4.png",
+                      "assets/imgs/h4.png",
                       "Hamburguesa doble Queso",
                       "h4",
                       "5.50",
@@ -234,7 +232,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/h5.jpg",
+                      "assets/imgs/h5.jpg",
                       "Hamburguesa Bacon",
                       "h5",
                       "6.50",
@@ -247,18 +245,18 @@ class _HomePageState extends State<HomePage>
                 ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    comida("assets/pict/po1.jpg", "Pollo Rostizado", "po1",
+                    comida("assets/imgs/po1.jpg", "Pollo Rostizado", "po1",
                         "5.99"),
                     const SizedBox(
                       width: 15.0,
                     ),
-                    comida("assets/pict/po2.jpg", "Pollo Empanizado", "po2",
+                    comida("assets/imgs/po2.jpg", "Pollo Empanizado", "po2",
                         "6.99"),
                     const SizedBox(
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/po3.jpg",
+                      "assets/imgs/po3.jpg",
                       "Pollo Encobellado",
                       "po3",
                       "3.50",
@@ -269,7 +267,7 @@ class _HomePageState extends State<HomePage>
                   scrollDirection: Axis.horizontal,
                   children: [
                     comida(
-                      "assets/pict/ta1.jpg",
+                      "assets/imgs/ta1.jpg",
                       "Tacos de Carne",
                       "ta1",
                       "3.50",
@@ -278,7 +276,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/ta2.jpg",
+                      "assets/imgs/ta2.jpg",
                       "Tacos de Poll",
                       "ta2",
                       "3.00",
@@ -287,7 +285,7 @@ class _HomePageState extends State<HomePage>
                       width: 15.0,
                     ),
                     comida(
-                      "assets/pict/ta3.jpg",
+                      "assets/imgs/ta3.jpg",
                       "Tacos de Jamon",
                       "ta3",
                       "2.75",
